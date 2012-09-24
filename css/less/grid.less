@@ -1,0 +1,21 @@
+.container {
+	
+}
+
+/* 	How this works:
+*	Set breakpoints IN HERE for all your grid classes. LESS
+*	will spit out a media query for each element that'll shrink it.
+*	TODO: Define a "breakpoint" variable in here? Can we do multiple
+*	arg values in LESS?
+*/
+
+.grid( @columns, @margin : .038, @width : .0485 ) {
+	margin-right: percentage(@margin);
+	float: left;
+	min-height: 1px;
+	width: percentage( (@width * @columns) + (@margin * (@columns - 1) ) );
+}
+
+.last {
+	margin-right: 0px;
+}
