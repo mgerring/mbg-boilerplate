@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [HTML5 Boilerplate](http://html5boilerplate.com)
 
 HTML5 Boilerplate is a professional front-end template for building fast,
@@ -61,3 +62,9 @@ you want to write about your project.
 Anyone and everyone is welcome to
 [contribute](/h5bp/html5-boilerplate/blob/master/CONTRIBUTING.md). Hundreds
 of developers have helped make the HTML5 Boilerplate what it is today.
+=======
+mbg-boilerplate
+===============
+
+All you need to know is that this version of boilerplate calculates the vertical rhythm with φ and reloads automatically. ENOUGH SAID
+>>>>>>> 132c887776b02986b823337b21346f53fa2c4343

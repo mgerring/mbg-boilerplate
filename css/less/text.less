@@ -5,9 +5,9 @@
 /* Default text colors, can be overloaded */
 @body : #222;
 @headline : @body;
-@link : #30D70D4;
-@link-hover : darken(#30D70D4, 10%);
-@link-visited : lighten(#30D70D4, 20%);
+@link : #0B7DBA;
+@link-hover : darken(@link, 10%);
+@link-visited : lighten(@link, 20%);
 @highlight : #EDD900;
 
 /* Default font stack, can be overloaded */
@@ -59,7 +59,7 @@ a {
 
 /* Settings */
 /* font sizes in pixels - only used for body; will be converted to ems */
-@body_font_size:14;
+@body_font_size:12;
 /* The vertical rhythym is phi. It should never be anything other than phi because it is perfect. End of story. */
 @body_line_height:@body_font_size * 1.6180339887498948482;
 
@@ -70,21 +70,21 @@ a {
 @factor_p:0;
 @factor_small:-2;
 
-.font_size(@size) {
+.font_size (@size) {
 	font-size: 0em + (@body_font_size + @size) / @body_font_size;
 }
-.line_height(@size) {
+.line_height (@size) {
 	line-height: 0em + @body_line_height / (@body_font_size + @size);
 }
 .margin_top() {
 	margin-top: 0;	
 }
-.margin_bottom(@size: 0) {
+.margin_bottom (@size: 0) {
 	margin-bottom: 0em + @body_line_height / (@body_font_size + @size);
 }
 
 body {
-	.font_size(@body_font_size);
+	.font_size(@factor_p);
 	.line_height(@factor_p);
 }
 
