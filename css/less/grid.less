@@ -15,21 +15,89 @@
 	margin-right: percentage(@margin);
 	float: left;
 	min-height: 1px;
-	margin-left: percentage( (@width * @columns) + (@margin * (@columns - 1) ) );
+	margin-left: percentage( (@width * @columns) + (@margin * (@columns) ) );
 }
 .container {
 	padding-left: 20px;
 	padding-right: 20px;
+	width:100%;
+	box-sizing:border-box;
 }
-
 .row {
-	width: 100%;
-	max-width: 1140px;
-	min-width: 755px;
+	max-width: 960px;
 	margin: 0 auto;
-	overflow: hidden;
+	float:none!important;
 }
-
+.grid-1 {
+	.grid(1);
+}
+.grid-2 {
+	.grid(2);
+}
+.grid-3 {
+	.grid(3);
+}
+.grid-4 {
+	.grid(4);
+}
+.grid-5 {
+	.grid(5);
+}
+.grid-6 {
+	.grid(6);
+}
+.grid-7 {
+	.grid(7);
+}
+.grid-8 {
+	.grid(8);
+}
+.grid-9 {
+	.grid(9);
+}
+.grid-10 {
+	.grid(10);
+}
+.grid-11 {
+	.grid(11);
+}
+.grid-12 {
+	.grid(12);
+}
+.push-1 {
+	.push(1);
+}
+.push-2 {
+	.push(2);
+}
+.push-3 {
+	.push(3);
+}
+.push-4 {
+	.push(4);
+}
 .last {
 	margin-right: 0px;
+}
+img, iframe, embed {
+	max-width:100%;
+}
+
+@media only screen and (max-width:755px) {
+	.grid {
+		margin-right: 0;
+		float: left;
+		min-height: 1px;
+		width: 100%;
+	}
+	.push {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6,.grid-7,.grid-8,.grid-9,.grid-10,.grid-11,.grid-12 {
+		.grid;
+	}
+	.push-1, .push-2, .push-3, .push-4 {
+		.push;
+	}
 }
